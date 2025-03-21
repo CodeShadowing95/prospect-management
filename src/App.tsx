@@ -193,8 +193,8 @@ function App() {
               onChange={(e) => setFormData({ ...formData, statut: e.target.value })}
               value={formData.statut}
             >
-              <option value="Confirmé" selected>Confirmé</option>
-              <option value="En attente">En attente</option>
+              <option value="Confirmé">Confirmé</option>
+              <option value="En attente" selected>En attente</option>
               <option value="Refusé">Refusé</option>
             </select>
             <input
