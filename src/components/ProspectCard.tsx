@@ -2,7 +2,7 @@ import { FinanceRequest } from "../types"
 
 const ProspectCard = ({ financeRequest, handleDelete, handleEdit }: { financeRequest: FinanceRequest, handleDelete: (id: number) => void, handleEdit: (id: number) => void }) => {
   return (
-    <div className="w-[325px] max-w-[325px] border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="max-w-[325px] border border-gray-200 rounded-lg p-4 bg-white/60 backdrop-blur-md shadow-lg cursor-pointer hover:shadow-xl hover:bg-white transition-all duration-300">
         
         <div className="w-full flex justify-between items-start gap-4">
             <div className="flex gap-2 items-center">
@@ -35,9 +35,6 @@ const ProspectCard = ({ financeRequest, handleDelete, handleEdit }: { financeReq
                     <div className={`w-2 h-2 rounded-full ${financeRequest.statut === 'En attente' ? 'bg-yellow-700' : financeRequest.statut === 'Confirmé' ? 'bg-green-700' : 'bg-red-700'}`}></div>
                     <p className={`text-xs font-medium ${financeRequest.statut === 'En attente' ? 'text-yellow-700' : financeRequest.statut === 'Confirmé' ? 'text-green-700' : 'text-red-700'}`}>{financeRequest.statut}</p>
                 </div>
-                <button className="w-6 h-6 flex justify-center items-center rounded-lg border border-gray-200 hover:bg-gray-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 align-middle text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
-                </button>
             </div>
         </div>
     </div>

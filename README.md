@@ -1,5 +1,8 @@
 # Gestion des Leads - Application JavaScript
 
+## Aperçu de l'application
+![Aperçu de l'application](./public/showcase.jpeg)
+
 ## Description
 Cette application permet de gérer une liste de demandes de financement (leads) avec plusieurs fonctionnalités :
 
@@ -12,9 +15,7 @@ Cette application permet de gérer une liste de demandes de financement (leads) 
 - (Bonus) Stockage des données en `localStorage` pour persister après un rafraîchissement.
 
 ## Démo en ligne
-```txt
-https://prospectify.netlify.app/
-```
+[Accéder à la démo en ligne](https://prospectify.netlify.app/)
 
 ## Installation et exécution du projet
 
@@ -29,47 +30,4 @@ Si vous utilisez un gestionnaire de paquets comme `npm` ou `yarn` :
 ```bash
 npm install  # ou yarn install
 npm run dev
-```
-
-### 3. Lancer l'application
-Ouvrez simplement le fichier `index.html` dans votre navigateur, ou utilisez un serveur local si nécessaire :
-```bash
-npx live-server  # si installé
-```
-
-## Fonctionnalités
-
-### 1. Affichage des leads
-- Chargement des leads à partir d’un fichier JSON simulé.
-- Affichage des informations : Nom, Statut, Montant, Date de demande.
-
-### 2. Filtrage des leads
-- Un menu déroulant permet de filtrer les leads selon leur statut (En attente, Confirmé, Refusé).
-
-### 3. Modification du statut
-- Chaque lead dispose d’un bouton permettant de modifier son statut.
-
-### 4. Ajout d’un lead
-- Un formulaire permet d’ajouter un lead avec un nom et un montant.
-- Le statut est défini par défaut à "En attente".
-
-### 5. Suppression d’un lead
-- Chaque lead dispose d’un bouton de suppression.
-
-### 6. (Bonus) Recherche par nom
-- Un champ de recherche permet de filtrer les leads par nom.
-
-### 7. (Bonus) Persistance des données
-- Les leads sont sauvegardés dans `localStorage` pour être conservés après rafraîchissement.
-
-## Technologies utilisées
-```txt
-- HTML, CSS, JavaScript (ES6+)
-- Stockage local via `localStorage`
-```
-
-## Auteurs
-```txt
-- Patrick NAMEGNI
-- Contact : patrick.namegni@gmail.com
 ```
